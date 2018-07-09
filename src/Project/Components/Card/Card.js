@@ -1,39 +1,51 @@
-import React from 'react'
+import React, {Component} from 'react'
 
-const Card = (props) => {
-  if(this.props.state.card.length === 39){
-  return(
-    <div>
-      <h2>{this.props.name}</h2>
-      <p>Model:{this.props.model}</p>
-      <p>Class:{this.props.class}</p>
-      <p># of Passengers:{this.props.passengers}</p>
-      <button>*</button>
-    </div>
-  )
-}
-  if(this.props.state.card.length === 61) {
-    return(
-      <div>
-        <h2>{this.props.name}</h2>
-        <p>Terrain:{this.props.terrain}</p>
-        <p>Population:{this.props.population}</p>
-        <p>Climate:{this.props.climate}</p>
-        <p>Residents:{this.props.residents}</p>
-        <button>*</button>
-      </div>
-    )
+class Card extends Component {
+  constructor(props) {
+    super(props)
   }
-  if(this.props.state.card.length = 87)
-  return(
-    <div>
-      <h2>{this.props.name}</h2>
-      <p>Homeworld:{this.props.homeworld}</p>
-      <p>Species:{this.props.species}</p>
-      <p>Language:{this.props.language}</p>
-      <p>Population:{this.props.population}</p>
-    </div>
-  )
+  // const {name, model, clas, passengers, terrain, population,
+  //   climate, residents, homeworld, species,language} = props
+  if(this.props.cards.length === 39){
+    render(){
+      return(
+        <div>
+          <h2>{props.name}</h2>
+          <p>Model:{props.model}</p>
+          <p>Class:{props.clas}</p>
+          <p># of Passengers:{props.passengers}</p>
+          <button>*</button>
+        </div>
+      )
+    }
+  }
+  if(props.cards.length === 61) {
+    render(){
+      return(
+        <div>
+          <h2>{props.name}</h2>
+          <p>Terrain:{props.terrain}</p>
+          <p>Population:{props.population}</p>
+          <p>Climate:{props.climate}</p>
+          <p>Residents:{props.residents}</p>
+          <button>*</button>
+        </div>
+      )
+    }
+  }
+  if(props.cards.length === 87) {
+    render(){
+      return(
+        <div>
+          <h2>{props.name}</h2>
+          <p>Homeworld:{props.homeworld}</p>
+          <p>Species:{props.species}</p>
+          <p>Language:{props.language}</p>
+          <p>Population:{props.population}</p>
+        </div>
+      )
+    }
+  }
 }
 
 export default Card

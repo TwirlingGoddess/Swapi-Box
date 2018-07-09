@@ -84,7 +84,13 @@ class App extends Component {
           </header>
           <Landing  categories={this.state.categories}
                     updateClick={this.updateClick}/>
-          <main>{this.state.cards.map(card => console.log(card, 'haaayyyy'))}</main>
+          <main>{this.state.cards.map(card => {
+                                          return (
+                                              <Card cards={this.state.cards}
+                                                    key={Date.now() * Math.random()}
+                                                    {...card}
+                                              />)})}
+          </main>
         </div>
       );
     }
