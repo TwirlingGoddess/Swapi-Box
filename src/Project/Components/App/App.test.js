@@ -11,4 +11,18 @@ describe('the App in and its state')
     ReactDOM.unmountComponentAtNode(div);
   });
 
+  it('should have a landing page', () => {
+
+  })
+
+  it('should have a scroller page', () => {
+
+  })
+
+  it('should have an empty array in state', () => {
+
+  })
+
+  it('should test the fetch')
+
 });
