@@ -21,7 +21,7 @@ Megan Haub [GitHub](https://github.com/Haub)
 
 ### Our design:
 
-![Project Screenshot](https://github.com/Haub/swapibox/blob/master/Screen%20Shot%202018-08-27%20at%201.49.56%20PM.png)
+![Project Screenshot](https://github.com/TwirlingGoddess/Swapi-Box/blob/master/Screen%20Shot%202018-09-15%20at%204.20.49%20PM.png)
 
   
 
